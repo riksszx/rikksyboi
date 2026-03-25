@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rikksy | Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <span class="logo-bracket">&lt;</span>Rikksy<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="navbar__links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark/light mode"
+          title="Toggle dark/light mode"
+        >
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section class="section home" id="home">
+    <div class="container home__inner">
+      <div class="home__text reveal">
+        <p class="home__greeting">Hi there, I'm</p>
+        <h1 class="home__name">Rikksy</h1>
+        <h2 class="home__title">
+          <span class="typed-text" id="typedText"></span
+          ><span class="cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="home__desc">
+          I craft fast, accessible, and beautiful web experiences. Passionate
+          about clean code, thoughtful design, and constantly levelling up my
+          skills.
+        </p>
+        <div class="home__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="home__visual reveal reveal--right">
+        <div class="code-card">
+          <div class="code-card__header">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="code-card__filename">developer.js</span>
+          </div>
+          <pre class="code-card__body"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Rikksy"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Full-Stack Dev"</span>,
+  <span class="c-key">loves</span>: [
+    <span class="c-str">"clean code"</span>,
+    <span class="c-str">"open source"</span>,
+    <span class="c-str">"dark mode"</span> <span class="c-comment">// obviously</span>
+  ],
+  <span class="c-key">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills sub-section -->
+    <div class="container skills reveal" id="skills">
+      <h3 class="skills__heading">Tech Stack</h3>
+      <div class="skills__grid">
+        <div class="skill-bar" data-skill="HTML / CSS" data-level="92">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">HTML / CSS</span>
+            <span class="skill-bar__value">92%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 92%"></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="JavaScript" data-level="85">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">JavaScript</span>
+            <span class="skill-bar__value">85%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="React" data-level="78">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">React</span>
+            <span class="skill-bar__value">78%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 78%"></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="Node.js" data-level="72">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">Node.js</span>
+            <span class="skill-bar__value">72%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 72%"></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="Python" data-level="68">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">Python</span>
+            <span class="skill-bar__value">68%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 68%"></div>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="Git / GitHub" data-level="88">
+          <div class="skill-bar__header">
+            <span class="skill-bar__name">Git / GitHub</span>
+            <span class="skill-bar__value">88%</span>
+          </div>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" style="--level: 88%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__avatar reveal">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-initials">RB</div>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__number" data-count="3">0</span>
+            <span class="stat__label">Years Coding</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="20">0</span>
+            <span class="stat__label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="10">0</span>
+            <span class="stat__label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__text reveal reveal--right">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Turning ideas into<br /><span class="highlight">digital reality</span></h2>
+        <p>
+          I started coding out of pure curiosity — I wanted to know how
+          websites actually worked. That curiosity quickly turned into a
+          passion. Today I build modern web applications with a focus on
+          performance, accessibility, and great user experiences.
+        </p>
+        <p>
+          When I'm not coding, you'll find me exploring new tech, contributing
+          to open-source, or deep-diving into computer science fundamentals.
+          My goal is to become a well-rounded software engineer who can solve
+          real-world problems with elegant code.
+        </p>
+        <div class="about__tags">
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Fast Learner</span>
+          <span class="tag">Open Source</span>
+          <span class="tag">Clean Code</span>
+          <span class="tag">UI/UX Curious</span>
+        </div>
+        <a href="#contact" class="btn btn--primary">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">Things I've <span class="highlight">built</span></h2>
+        <p class="section-subtitle">A selection of projects I'm proud of. Each one taught me something new.</p>
+      </div>
+      <div class="projects__grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">📋</div>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/riksszx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="View source code"
+                title="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Task Manager App</h3>
+          <p class="project-card__desc">
+            A full-featured task management application with drag-and-drop
+            functionality, priority labels, and local storage persistence.
+            Built with vanilla JavaScript — no frameworks needed.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--tech">HTML</span>
+            <span class="tag tag--tech">CSS</span>
+            <span class="tag tag--tech">JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card project-card--featured reveal">
+          <div class="project-card__badge">Featured</div>
+          <div class="project-card__header">
+            <div class="project-card__icon">🌦️</div>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/riksszx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="View source code"
+                title="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Weather Dashboard</h3>
+          <p class="project-card__desc">
+            A responsive weather app that fetches real-time data from the
+            OpenWeather API. Displays a 5-day forecast, UV index, wind
+            speed, and location-based search with beautiful animated icons.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--tech">React</span>
+            <span class="tag tag--tech">REST API</span>
+            <span class="tag tag--tech">CSS Modules</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">💬</div>
+            <div class="project-card__links">
+              <a
+                href="https://github.com/riksszx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="View source code"
+                title="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Dev Chat App</h3>
+          <p class="project-card__desc">
+            A real-time chat application built with Node.js and Socket.IO.
+            Features rooms, typing indicators, emoji support, and message
+            history. Deployed on Railway with persistent storage.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--tech">Node.js</span>
+            <span class="tag tag--tech">Socket.IO</span>
+            <span class="tag tag--tech">Express</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's <span class="highlight">connect</span></h2>
+        <p>
+          Whether you have a project in mind, want to collaborate, or just
+          want to say hi — my inbox is always open. I'll get back to you as
+          soon as possible!
+        </p>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">📧</span>
+            <a href="mailto:rikksy@example.com">rikksy@example.com</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">🐙</span>
+            <a href="https://github.com/riksszx" target="_blank" rel="noopener noreferrer">github.com/riksszx</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">🔗</span>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/rikksy</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal reveal--right" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            placeholder="Your name"
+            required
+            autocomplete="name"
+          />
+          <span class="form-error" id="nameError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+          />
+          <span class="form-error" id="emailError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-input form-textarea"
+            placeholder="Tell me about your project..."
+            rows="5"
+            required
+          ></textarea>
+          <span class="form-error" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span class="btn-text">Send Message 🚀</span>
+          <span class="btn-loading" aria-hidden="true">Sending…</span>
+        </button>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        Designed &amp; built by <strong>Rikksy</strong> &mdash;
+        <span id="footerYear"></span>
+      </p>
+      <p class="footer__made">Made with ☕ &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
